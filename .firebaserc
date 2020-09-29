@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rgb-lamps": {
+      "hosting": {
+        "rgb-lamps": [
+          "rgb-lamps"
+        ]
+      }
+    }
+  }
+}
