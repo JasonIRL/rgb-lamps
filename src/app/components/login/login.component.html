@@ -1,0 +1,11 @@
+<div *ngIf="auth.user$ | async; then authenticated; else guest"></div>
+
+<ng-template #guest>
+  <h3>Welcome</h3>
+  <p>Please login to get started</p>
+  <button (click)="auth.googleSignIn()">Connect with Google</button>
+</ng-template>
+
+<ng-template #authenticated>
+  <button (click)="auth.signOut()">Sign Out</button>
+</ng-template>
